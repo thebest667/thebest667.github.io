@@ -1,0 +1,57 @@
+body {
+  border: 2px solid black;
+  min-height: auto;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(111, 0, 255);
+}
+header {
+  text-align: center;
+  color: red;
+}
+#question {
+  padding-left: 80px;
+  color: rgb(253, 0, 0);
+  font-size: 28px;
+  text-decoration: rgb(0, 255, 34) wavy underline;
+  margin: 0;
+}
+#phrase {
+  font-size: 23px;
+  margin: 0;
+}
+#rayan {
+  padding-left: 50px;
+}
+
+#tout {
+  background-color: rgb(189, 228, 238);
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: rgb(1, 255, 14) underline;
+}
+ul {
+  margin: 0;
+}
+#fb {
+  width: 20px;
+}
+#fbb {
+  list-style: none;
+  padding: 0;
+}
+#fbbb {
+  width: 25px;
+}
+#nopoint {
+  padding: 0;
+}
+a:hover {
+  color: red;
+}
+#pad {
+  padding-left: 40px;
+}
