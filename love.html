@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love you</title>
+<style>
+    *{
+    color: white
+}
+ul{
+  position: absolute;
+  width: 100%;
+
+    
+  
+ 
+}
+nav ul li.left:hover .mkhabi{
+   display: block;
+  
+}
+.mkhabi p{
+   padding: 0;
+   margin: 0;
+   font-size: 25px;
+}
+.mkhabi{
+    text-align: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: none;
+    background-color: rgb(100, 12, 243);
+}
+.right a{
+    color: purple;
+    font-size: 40px;
+}
+.right{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    float: right;
+    width: 49%;
+    text-align: center;
+}
+.left a{
+    color: purple;
+    font-size: 40px;
+}
+.left{
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    left: 2px;
+    float: left;
+    width: 49%;
+}
+ul li{
+    position: absolute;
+list-style-type: none;
+  margin: 0; 
+  background-color: plum;
+  display: inline;
+  padding: 10px 10px;
+  width: 100%;
+  list-style: none;
+}
+li a{ 
+   text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.Act{
+    font-size: 20px;
+}
+.chi3r:hover{
+    box-shadow: 0px 0px 30px 20px rgb(162, 0, 255);
+}
+.chi3r{
+
+    width: 400px;
+    height: 100%;
+    margin: 20px 10px;
+    background-color: rgb(238, 82, 238);
+}
+#show{
+    display: none;
+}
+.case{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+}
+.presentation{
+   padding: 20px 400px;
+    position: relative;
+    background-color: rgb(238, 108, 108);
+    font-size: 40px;
+    top: 160px;
+}
+.presentation1{
+  padding: 20px 0px;
+  text-align: center;
+   position: relative;
+   background-color: rgb(238, 108, 108);
+   font-size: 20px;
+   top: 160px;
+}
+.heart {
+    background-color: red;
+    display: none;
+    height: 30px;
+    margin: 0 40px;
+    position: relative;
+    top: -50px;
+    transform: rotate(-60deg);
+    width: 30px;
+  }
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+  
+.heart:before {
+    top: -15px;
+    left: 0;
+}
+  
+  .heart:after {
+    left: 15px;
+    top: 0;
+}
+nav ul li.right:hover .something{
+  display: block;
+}
+.something p{
+  margin: 0;
+  font-size: 25px;
+}
+.something{
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: none;
+  width: 100%;
+  position: relative;
+  background-color: rgb(100, 12, 243);
+}
+.heart1 {
+    background-color: rgb(107, 7, 238);
+    display: none;
+    height: 30px;
+    margin: 0 40px;
+    position: relative;
+    top: -60px;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+div .chi3r:hover .heart{
+    display: inline-block; 
+    transition: 1s ease;    
+}
+ div .chi3r:hover .heart1{
+  display: inline-block; 
+  transition: 1s ease;   
+}
+div .chi3r:hover .heart2{
+  display: inline-block; 
+  transition: 1s ease;  
+}
+  .heart1:before,
+  .heart1:after {
+    content: "";
+    background-color: rgb(107, 7, 238);
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart1:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart1:after {
+    left: 15px;
+    top: 0;
+  }
+  .heart2 {
+    background-color: rgb(0, 4, 243);
+    display: none;
+    height: 30px;
+    margin: 0 40px;
+    position: relative;
+    top: -50px;
+    transform: rotate(-20deg);
+    width: 30px;
+  }
+  
+  .heart2:before,
+  .heart2:after {
+    content: "";
+    background-color: rgb(0, 4, 243);
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+  }
+  
+  .heart2:before {
+    top: -15px;
+    left: 0;
+  }
+  
+  .heart2:after {
+    left: 15px;
+    top: 0;
+  }
+.game{
+  background-color: rgb(0, 183, 255);
+  width: 100vw;  
+  height: 200px;
+position: absolute;
+  top: 50%;
+  
+}
+#question{
+  color: blue;
+  font-size: 30px;
+  position: relative;
+  left: 45%; 
+}
+#choices{
+ position: relative;
+ left: 45%;
+}
+button{
+  color: blue;
+  font-size: 20px;
+}
+#popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  color: red;
+  text-align: center;
+}
+#hide{
+  display: none;
+}
+</style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li class="left" id="btn"><a href="#">chi3r</a> <br> 
+                        <div class="mkhabi">
+                        <h2>What is chi3r?</h2>
+                        <p>Click on "Chi3r" to see some of my love towards the best human in earth</p>
+                        </div>
+                </li>
+                    <li class="right" id="btn1"><a href="#">Love Game</a><br><div class="something"><h2>What is Love Game?</h2>
+                    <p>it is game where we will test OUR love</p></div></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="show">
+    <div class="presentation" >
+        <p>This is kinda a portfolio
+        Hope you like it as much as i do</p>
+    </div>
+    <div class="case" >
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div>
+        <p class="Act">This text is for the one who made me discover the joy of life 
+        The one that was always and still is with me 
+        The one who took all the place in my heart
+        The one that i can give up anything for her 
+        The one that made me discover peace in her heart and happiness is here eyes
+        The one that taught me life things like a mom 
+        The one that laughed and played with me like a sister 
+        The one that shine with her beauty
+        The one that can make me feel better with just a text
+        The one that i enjoy going/staying with in the uni
+        The one that i wanna marry
+        The one that makes want to become a father 
+        The one that i will never replace
+        The one that gives me energy to wake up everyday
+        The one that i take inspiration of to write good things 
+        The one that made me say all these truths
+        But who is "THE ONE"
+        If you know her 
+        Tell HER THAT I LOVE HER THE MOST IN THIS WORLD</p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">Maissa are you a magician?
+        Bcs when you are around you Make everyone else disappear
+        Maissa are you my queen?
+        Bcs i just wanna do all what you say and make your dream true
+        Maissa are you my friend?
+        Bcs I just wanna laugh and have fun with you
+        Maissa are you my wife?
+        Bcs i wanna end up my life in your side and never leave you 
+        Maissa are .. are you? What are you exactly?</p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">My brain want to rest but my heart can't
+        My brain want to sleep but my heart force it(my brain) to keep thinking about her
+        My brain is tired but my heart makes it excited
+        My brain and heart decided to not let me sleep and to write this
+        My hand is just a hostage in their plan
+        A plan in which decided to force my hand to write what they tell her 
+        A plan in which they make my hand write :
+        I CAN'T STOP THINKING ABOUT YOU
+        SEEING YOUR FACE MAKE ME HAPPY
+        Those beautiful eyes should be considered as a weapon, they make me want to commit the worst to get them
+        This smile make me feel the luckiest man for having a chance to see it 
+        Can't remember a good memory in the uni without you being involved in it
+        Can't feel anything when you are around happiness and love take all the place in my heart
+        Damn finally they(my brain and heart) left my hand alone 
+        HABAK (me the hand said it)
+        Hope you are doing a sweet dream</p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">Thanks to the woman that Made me grow and become more responsible
+        Thanks to the woman who supported me in any decision
+        Thanks to the woman who loves me for nothing
+        Thanks to the woman that i love and can do everything for her</p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">Another night when i should be sleeping but i'm thinking about her 
+        Another night with my mind full of our memories 
+        Another night writing my heart feelings
+        Wanna sleep so i see her faster
+        Wanna sleep to see her in my dream
+        The woman that made my life nicer
+        The only woman that understand what i mean (no joke tu m'impressionne)
+        THE ONLY WOMAN I TRULY LOVE
+        HABAK 
+        GOOD NIGHT
+        CAN'T WAIT TO SEE YOU TOMORROW</p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">I wanna die MAISSA 
+        Imagine f exo 3anda like 2 variables MI, U
+        and we try to prove their value 
+        No matter how hard i tried i couldn't prove they are bigger than 3 
+        So IN CONCLUSION
+        MI and U < 3
+       </p></div>
+    <div class="chi3r"><div class="heart"></div><div class="heart1"></div><div class="heart2"></div><p class="Act">Actually i want to tell you something else
+        I want to show you how perfect you are
+        If only you can see yourself the way i see you 
+        I want to tell you how precious (to me) you are
+        Same value (if not more) as my own life 
+        You are the main character in my life
+        You can never leave my heart 
+        You can't escape from my mind 
+        My only thought during day n night
+        Well habak a lot haha
+        GOOD NIGHT FR THIS TIME</p></div>
+    </div>
+    </div>
+    <div id="hide">
+    <div class="presentation1" id="show1">
+        <h1>In this game you will test your love for me</h1>
+    </div>
+<div class="game">
+    <div id="question"></div>
+<div id="choices">
+  <button id="choice1"></button>
+  <button id="choice2"></button>
+  <button id="choice3"></button>
+</div>
+<div id="popup"></div>
+</div>
+</div>
+</body>
+<script>
+    const link = document.getElementById("btn");
+const show = document.getElementById("show");
+const linkk = document.getElementById("btn1");
+const hide = document.getElementById("hide");
+link.addEventListener("click",function(e){
+    if(show.style.display == "none" && hide.style.display == "none"){
+        show.style.display ="flex";
+    } else if(show.style.display == "none" && hide.style.display == "block"){ 
+        show.style.display = "flex"; hide.style.display = "none";
+    }else {show.style.display = "none"}})
+linkk.addEventListener("click",function(e){
+    if(hide.style.display == "none" && show.style.display =="none"){
+        hide.style.display ="block";
+    } else if(show.style.display == "flex" && hide.style.display == "none"){ 
+        hide.style.display = "block"; show.style.display = "none";
+    }else{hide.style.display = "none"}})
+const questions = [
+  {
+    question: "When is my birthday?",
+    choices: ["28 april 2005", "21 jan 2004", "23 jan 2004"],
+    answer: 1,
+    wrong: "No way! my birthday :'( , MAHABAKCH",
+    correct: "MZIYA, Habak",
+  },
+  {
+    question: "When is our Marriage?",
+    choices: ["06", "08mars", "07mars"],
+    answer: 2,
+    wrong: "Well, consideryourself as divorced woman",
+    correct: "Yaay! Habak Zawjati",
+  },
+  {
+    question: "Who won Gateau challenge?",
+    choices: ["MOI", "MOI","MOI"],
+    answer: 0,
+    wrong: "Je suis mauvais joueur haha",
+    correct: "Je suis mauvais joueur haha",
+  },
+  {
+    question: "Why did we decide to get married le 07?",
+    choices: ["Because it's in the half of my moms and yours birthday", "Random","Because rayan decided"],
+    answer: 0,
+    wrong: "How could you forget",
+    correct: "Another good answer Damn, HABAAAK",
+  }
+];
+let currentQuestion = 0;
+
+const questionEl = document.getElementById("question");
+const choicesEl = document.getElementById("choices");
+const popupEl = document.getElementById("popup");
+let O=0;
+let cpt=0;
+function showQuestion() {
+  const question = questions[currentQuestion];
+  questionEl.innerText = question.question;
+  choicesEl.innerHTML = "";
+  for (let i = 0; i < question.choices.length; i++) {
+    const choice = question.choices[i];
+    const choiceEl = document.createElement("button");
+    choiceEl.innerText = choice;
+    choiceEl.addEventListener("click", () => {
+      if (i === question.answer) {
+        O=1;
+        showPopup(question.correct);
+      } else {
+        cpt++;
+        showPopup(question.wrong);
+      }
+    });
+    choicesEl.appendChild(choiceEl);
+  }
+}
+
+function showPopup(message) {
+  popupEl.innerText = message;
+  popupEl.style.display = "block";
+  setTimeout(() => {
+    popupEl.style.display = "none";
+    if (O==1) {currentQuestion++; O=0;}
+    if (currentQuestion < questions.length) {
+      showQuestion();
+    } else {
+      if(cpt==0){questionEl.innerHTML = "Khlasso les questions, Hope you liked my site :))<br>maghlati f hta question proud of you"}
+      else{questionEl.innerHTML = "How dare YOU TAGHALTI f "+cpt+" questions <br> Mahabakch"}
+      
+      choicesEl.innerHTML = "";
+    }
+  }, 2000);
+}
+
+showQuestion();
+</script>
+</html>
